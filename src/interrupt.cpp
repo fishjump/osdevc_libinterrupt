@@ -7,8 +7,8 @@ namespace
 {
     const size_t MAX_INTERRUPT_TABLE_SIZE = 256;
 
-    extern "C" system::interrupt::entity::InterruptDescriptor interruptDescriptorTable[MAX_INTERRUPT_TABLE_SIZE] = {0};
-    const system::interrupt::entity::InterruptDescriptorTableDescriptor idtDescriptor = {
+    system::interrupt::entity::InterruptDescriptor interruptDescriptorTable[MAX_INTERRUPT_TABLE_SIZE] = {0};
+    extern "C" const system::interrupt::entity::InterruptDescriptorTableDescriptor idtDescriptor = {
         sizeof(interruptDescriptorTable) * 8 - 1, // size of IDT
         (uint64_t)interruptDescriptorTable        // addr of IDT
     };
