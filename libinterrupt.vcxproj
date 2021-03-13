@@ -5,7 +5,7 @@
         <IncludePath>$(MSBuildProjectDirectory)/include</IncludePath>
         <SourcePath>$(MSBuildProjectDirectory)/src</SourcePath>
         <ModulePath>$(MSBuildStartupDirectory)/module</ModulePath>
-        <BuildPath>$(MSBuildStartupDirectory)/$(MSBuildProjectName)/build</BuildPath>
+        <BuildPath>$(MSBuildStartupDirectory)/build/$(MSBuildProjectName)</BuildPath>
         <TargetObject>$(BuildPath)/$(MSBuildProjectName).o</TargetObject>
         <GXX>/usr/bin/g++</GXX>
         <LD>/usr/bin/ld</LD>
