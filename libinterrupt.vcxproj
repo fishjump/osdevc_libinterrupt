@@ -16,7 +16,6 @@
     <ItemGroup>
         <Include Include="$(IncludePath)" />
         <Include Include="$(ModulePath)/libstdcxx/include" />
-        <Include Include="$(ModulePath)/libport/include" />
     </ItemGroup>
 
     <!-- Libs -->
